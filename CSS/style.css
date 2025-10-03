@@ -29,7 +29,7 @@ header {
 header h1 {
     /* pakai Comic Sans, fallback ke cursive */
     font-family: 'Comic Sans MS', 'Comic Sans', cursive;
-    font-weight: 1200;              /* bold */
+    font-weight: 700;              /* bold */
     color: #ffffff;                /* putih */
     /* efek drop shadow: x-offset, y-offset, blur, warna */
     text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.35);

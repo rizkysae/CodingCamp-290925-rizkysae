@@ -1,5 +1,39 @@
 body {
-    justify-items: center;
-    align-content: center;
-    height: 100vh;
+    margin: 0;
+    background-color: #87CEEB; /* biru langit */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    /* hapus properti yang tidak diperlukan dari versi sebelumnya */
+}
+
+/* Kotak putih besar untuk membungkus form, tombol aksi, dan daftar */
+main {
+    background: #ffffff;
+    width: min(900px, 95%);
+    margin: 20px 0;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+/* Penataan header supaya rapi di atas kotak */
+header {
+    margin-top: 24px;
+    text-align: center;
+}
+
+/* ===== perubahan: styling untuk judul "Write It!" ===== */
+header h1 {
+    /* pakai Comic Sans, fallback ke cursive */
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    font-weight: 1200;              /* bold */
+    color: #ffffff;                /* putih */
+    /* efek drop shadow: x-offset, y-offset, blur, warna */
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.35);
+    margin: 0;
+    /* ukuran tetap menggunakan Tailwind di HTML, tapi bisa override di CSS jika perlu */
+    font-size: 2rem;
 }

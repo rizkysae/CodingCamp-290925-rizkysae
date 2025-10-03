@@ -44,6 +44,12 @@ function deleteAllTodo() {
     renderTodo();
 }
 
+function deleteTodo(index) {
+    /// Hapus item pada posisi index lalu render ulang
+    todos.splice(index, 1);
+    renderTodo();
+}
+
 function filterTodo() { }
 
 /// Validate input fields
